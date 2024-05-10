@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functional Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <a href="https://github.com/Fortunemuna/Calculator-Project">Repository Link</a>
+    <input type="text" class="display" id="display" value="0" readonly>
+    <table class="buttons">
+     <tr>
+      <td><button onclick="appendToDisplay('7')">7</button></td>
+      <td><button onclick="appendToDisplay('8')">8</button></td>
+      <td><button onclick="appendToDisplay('9')">9</button></td>
+      <td><button onclick="appendToDisplay('/')">&div;</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendToDisplay('4')">4</button></td>
+      <td><button onclick="appendToDisplay('5')">5</button></td>
+      <td><button onclick="appendToDisplay('6')">6</button></td>
+      <td><button onclick="appendToDisplay('*')">&times;</button></td>
+    </tr>
+    <tr>
+     <td><button onclick="appendToDisplay('1')">1</button></td>
+      <td><button onclick="appendToDisplay('2')">2</button></td>
+      <td><button onclick="appendToDisplay('3')">3</button></td>
+      <td><button onclick="appendToDisplay('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="appendToDisplay('0')">0</button></td>
+      <td><button onclick="appendToDisplay('.')">.</button></td>
+      <td><button onclick="appendToDisplay('+')">+</button></td>
+      <td colspan="2"><button class="equal-button" onclick="calculateResult()">=</button></td>
+    </tr>
+    <div class="repo-link"> 
+      <script src="script.js"></script>
+</table>
+  </div>
+</body>
+</html>
